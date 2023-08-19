@@ -1,0 +1,63 @@
+@use '../config/variables';
+
+/* ===== SKILLS ===== */
+
+.skills {
+    &__container {
+        row-gap: 2rem;
+        text-align: center;
+    }
+    &__subtitle {
+        margin-bottom: var(--mb-2);
+    }
+    &__text {
+        margin-bottom: var(--mb-4);
+    }
+    &__data {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: .5rem 1rem;
+        margin-bottom: var(--mb-4);
+        font-weight: var(--font-semi);
+        background-color: var(--bg-medium-color);
+        border-radius: .5rem;
+        box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
+    }
+    &__identifier {
+        display: flex;
+        align-items: center;
+    }
+    &__icon {
+        font-size: 2rem;
+        margin-right: var(--mb-2);
+        color: var(--text-color);
+    }
+    &__bar {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: .25rem;
+        background-color: var(--text-color);
+        border-radius: .5rem;
+        // z-index: var(--z-back);
+    }
+    &__html {
+        width: 95%;
+    }
+    &__css3 {
+        width: 85%;
+    }
+    &__javascript {
+        width: 65%;
+    }
+    &__ux {
+        width: 85%;
+    }
+    &__img {
+        img {
+            border-radius: .5rem;
+        }
+    }
+}

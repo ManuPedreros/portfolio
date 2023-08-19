@@ -1,0 +1,43 @@
+@use '../config/variables';
+/* ===== BASE ===== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: variables.$header-height 0 0 0;
+    font-family: variables.$body-fonts;
+    font-size: variables.$normal-font-size;
+    background: variables.$linear-gradient;
+    color: variables.$white-color;
+}
+h1, h2, p {
+    margin: 0;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+button, input {
+    border: none;
+    outline: none;
+}
+button {
+    cursor: pointer;
+}
+img { 
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+::before, ::after {
+    box-sizing: border-box;
+}

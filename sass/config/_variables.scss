@@ -1,0 +1,75 @@
+/* ===== VARIABLES CSS ===== */
+
+// :root {
+$header-height: 3rem;
+/* ===== Colors ===== */
+$bg-strong-dark-color: #103732;
+$bg-dark-color: #164b41;
+$bg-strong-medium-color: #293f32;
+$bg-medium-color: #4d774e;
+$bg-light-color: #9dc88d;
+$text-color: #f1b24a;
+$white-color: #fff;
+$linear-gradient: linear-gradient(90deg, $bg-dark-color, $bg-medium-color, $bg-light-color);
+/* ===== Fonts and Typography ===== */
+$body-fonts: 'Poppins', sans-serif;
+$big-font-size: 2rem;
+$normal-font-size: .938rem;
+$small-font-size: .75rem;
+$h2-font-size: 1.25rem;
+/* ===== Font Weight ===== */
+$font-normal: 400;
+$font-semi: 500;
+$font-bold: 700;
+/* ===== Margins ===== */
+$mb-1: .5rem;
+$mb-2: 1rem;
+$mb-3: 1.5rem;
+$mb-4: 2rem;
+$mb-5: 2.5rem;
+$mb-6: 3rem;
+/* ===== Margins ===== */
+$z-back: -10;
+$z-fixed: 100;
+// }
+
+:root {
+    --header-height: #{$header-height};
+    /* ===== Colors ===== */
+    --bg-strong-dark-color: #{$bg-strong-dark-color};
+    --bg-dark-color: #{$bg-dark-color};
+    --bg-strong-medium-color: #{$bg-strong-medium-color};
+    --bg-medium-color: #{$bg-medium-color};
+    --bg-light-color: #{$bg-light-color};
+    --text-color: #{$text-color};
+    --white-color: #{$white-color};
+    --linear-gradient: #{$linear-gradient};
+    /* ===== Fonts and Typography ===== */
+    --body-fonts: #{$body-fonts};
+    --big-font-size: #{$big-font-size};
+    --normal-font-size: #{$normal-font-size};
+    --small-font-size: #{$small-font-size};
+    --h2-font-size: #{$h2-font-size};
+    /* ===== Font Weight ===== */
+    --font-normal: #{$font-normal};
+    --font-semi: #{$font-semi};
+    --font-bold: #{$font-bold};
+    /* ===== Margins ===== */
+    --mb-1: #{$mb-1};
+    --mb-2: #{$mb-2};
+    --mb-3: #{$mb-3};
+    --mb-4: #{$mb-4};
+    --mb-5: #{$mb-5};
+    --mb-6: #{$mb-6};
+    /* ===== Margins ===== */
+    --z-back: #{$z-back};
+    --z-fixed: #{$z-fixed};
+
+    // @media screen and (min-width: 968px) {
+    //     --big-font-size: 3.5rem;
+    //     --normal-font-size: 1rem;
+    //     --small-font-size: .875rem;
+    //     --h2-font-size: 2rem;
+    // }
+
+}

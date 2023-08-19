@@ -1,0 +1,51 @@
+@use '../config/variables';
+
+/* ===== HEADER - NAV ===== */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: variables.$header-height;
+    font-weight: variables.$font-semi;
+    &__logo {
+        color: variables.$white-color;
+    }
+    &__item {
+        margin-bottom: variables.$mb-4;
+    }
+    &__link {
+        position: relative;
+        color: variables.$white-color;
+        &:hover {
+            position: relative;
+            &::after {
+                position: absolute;
+                content: '';
+                top: 1.75rem;
+                left: 0;
+                width: 100%;
+                height: .18rem;
+                background-color: variables.$bg-light-color;
+            }
+        }
+    }
+    &__toggle {
+        color: variables.$white-color;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    /* ===== Active menu ===== */
+    .active::after {
+        position: absolute;
+        content: '';
+        top: 1.75rem;
+        left: 0;
+        width: 100%;
+        height: .18rem;
+        background-color: variables.$bg-light-color;
+    }
+    /* ===== Show menu ===== */
+    .show-menu {
+        right: 0;
+    }
+}

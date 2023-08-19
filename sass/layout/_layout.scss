@@ -1,0 +1,43 @@
+@use '../config/variables';
+
+/* ===== Reusable CSS CLASSES ===== */
+
+.section {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    &__title {
+        position: relative;
+        font-size: var(--h2-font-size);
+        color: var(--text-color);
+        margin-top: var(--mb-2);
+        margin-bottom: var(--mb-4);
+        text-align: center;
+        &::after {
+            position: absolute;
+            content: '';
+            width: 65px;
+            height: .25rem;
+            top: 2rem;
+            left: 0;
+            right: 0;
+            margin: auto;
+            background-color: var(--text-color);
+        }
+    }
+}
+
+/* ===== LAYOUT ===== */
+.l-header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: var(--bg-strong-dark-color);
+    box-shadow: 0 1px 4px rgba($color: var(--bg-medium-color), $alpha: .15)
+}
+.bd-grid {
+    display: grid;
+    margin: 0 var(--mb-2) 0 var(--mb-2);
+    max-width: 1024px;
+}
